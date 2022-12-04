@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gues the word</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1><del>Guess</del> <del>The</del> <del>Word</del></h1>
+    </header>
+
+    <main>
+        <section>
+            <header>
+
+            </header>
+            <div id="container">
+                <h2><del>Guess</del> <del>The</del> <del> Word</del></h2>
+                <p id="choosenword"></p>
+                <span class="hint">#Hint:</span><span id="choosenhint" class="hint"></span><br><br><br><br><br>
+                <input id="answer" type="button" value="Hint" onclick="PutHint()">
+                <input id="userInput" type="text" placeholder="Enter Ur Word">
+                <span id="counter1">score : </span><span id="counter2">0</span><br><br><br>
+                <input class="checkbutton" id="changer" type="button" value="Chang word" onclick="putword_puthint()">
+                <input class="checkbutton" id="checker" type="button" value="Check word" onclick="checkword()"><br><br>
+                <p id="result"></p>
+
+                <meter id="progress1" min="0" max="120" value="120"></meter><br>
+                <div id="timer">
+                    <p> <span id="remainingTime"> remaining time </span> <span id="time"> 02 : 00 </span></p>
+                </div>
+
+                <audio id="playmusic" src="Places.mp3"></audio>
+                <audio id="clickedsound" src="Click Sound Effect.mp3"></audio>
+                <audio id="hintsound" src="Magical Sound Effects.mp3"></audio>
+                <audio id="wrongsound" src="Wrong Answer Sound effect.mp3"></audio>
+                <audio id="correctsound" src="Correct answer sound effect _ No copyright.mp3"></audio>
+                <audio id="gameoversound" src="Game Over Voice - Sound Effect HD.mp3"></audio>
+
+
+            </div>
+            <div class="popup" id="menu">Menu <br>
+                <button class="newgame" onclick="Timer(),NewGame()">New Game</button>           
+                <button class="newgame" onclick="DisplayInfo()">Help!</button>
+                <button class="newgame" onclick="Exite()">Exite</button>
+            </div>
+
+            <div class="popup" id="ContainerOfResult">Result<br>
+                <p id="result2"></p>
+                <button class="newgame" id="backtomenu1" onclick="BackTomenu()">BACK</button>
+            </div>
+
+            <div class="popup" id="ContainerOfInfo">Game Info<br>
+                <p id="result3"></p>
+                <button class="newgame" id="backtomenu2" onclick="BackTomenu()">BACK</button>
+            </div>
+
+            <div class="popup" id="ContainerOfScoreInfo">Score Info<br>
+                <p id="result4"></p>
+                <button class="newgame" id="backtomenu3" onclick="BackTomenu()">BACK</button>
+            </div>
+            <div class="popup" id="UserNameMenu">User Info<br>
+                <input id="inputusername" type="text" placeholder="Enter User Name"> <br>
+                <button class="username" id="backtomenu4" onclick="BackTomenu()">BACK</button>
+                <button class="username" id="sendusername" onclick="StartGame()">OK</button>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+    <script src="gues the word.js"></script>
+</body>
+
+</html>
