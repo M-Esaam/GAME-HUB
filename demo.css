@@ -1,0 +1,81 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: black;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.anim,
+.anim svg {
+    width: 100%;
+    height: 100%;
+}
+
+.anim path {
+    stroke-width: 2;
+}
+
+
+.games {
+    width: 60%;
+    height: 600px;
+    border: 2px solid white;
+    margin: 50px;
+    z-index: 10;
+    background-color: black;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.img{
+    width: 100%;
+    height: 600px;
+    z-index: 1;
+}
+#anime1 {
+    height: 100%;
+}
+
+#main {
+    position: absolute;
+    width: 90%;
+    top: 100px;
+
+}
+
+#nav {
+    top: 0px;
+    position: absolute;
+    background-color: rgb(67, 67, 67);
+    width: 100%;
+    height: 50px;
+}
+
+/* #nav2 {
+    background-color: rgb(67, 67, 67);
+    width: 100%;
+    height: 100px;
+    
+} */
+
+.Sign {
+    width: 100px;
+    height: 50px;
+    background-color: rgba(255, 149, 0, 0.518);
+    color: bisque;
+    border: 0 solid white;
+    float: right;
+    margin-left: 5px;
+}
+
+.Sign:hover {
+    border: 1px solid black;
+    background-color: chocolate;
+    color: black;
+}
