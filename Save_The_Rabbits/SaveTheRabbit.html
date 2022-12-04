@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="Style/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="background"></div>
+
+    <img src="images/target-shooting.png" alt="" id="target-shooting">
+   
+
+    <img src="images/rabbit-bunny.gif" alt="" id="rabbit1">
+    <img src="images/rabbit-bunny.gif" alt="" id="rabbit2">
+    <img src="images/rabbit-bunny2.gif" alt="" id="rabbit3">
+
+    <img id="TIGER" src="tiger.gif"
+	onclick="AnimateTiger()" />
+    
+    <img src="images/Eagle1.gif" alt="" id="Eagle1">
+    <img src="images/Eagle2.gif" alt="" id="Eagle2">
+    <img src="images/Eagles/falcon2.gif" alt="" id="falcon2">
+    
+    <img src="images/bloodEffect.png" alt="" id="bloodEffect">
+    <img src="images/mute on.png" alt="" id="muteOn" onclick="playSound()">
+    <img src="images/mute off.png" alt="" id="muteOff" onclick="stopSound()">
+    <!-- <img src="/images/Eagle3.png" alt="" id="Eagle3"> -->
+    <audio src="sound/nature.mp3" id="nature" ></audio>
+    <audio src="sound/shotgun-firing.mp3" id="shotgunFiring"></audio>
+    <audio src="sound/ateeeh.mp3" id="ateeeh"></audio>
+    <audio src="sound/shalaby.mp3" id="shalaby"></audio>
+    <audio src="sound/Antesh.mp3" id="Antesh"></audio>
+    
+
+    <!-- ********************************* Display Time And Bullet ********************************************** -->
+
+
+    <meter id="progress1" min="0" max="120" value="120" ></meter>
+   
+    <!-- <progress min="0" max="120" value="120" id="progress1" low="80"></progress> -->
+    <div id="timer">
+        <p> <span id="remainingTime"> remaining time  </span> <span id="time">   02 : 00 </span></p>
+    </div>
+    
+
+    <!-- **************************************** Bullet ************************************ -->
+
+    <img src="images/Bullet.png" id="Bullet1" alt="" class="Bullets">
+    <img src="images/Bullet.png" id="Bullet2" alt="" class="Bullets">
+    <img src="images/Bullet.png" id="Bullet3" alt="" class="Bullets">
+    <img src="images/Bullet.png" id="Bullet4" alt="" class="Bullets">
+    <img src="images/Bullet.png" id="Bullet5" alt="" class="Bullets">
+    <p id="NumberOfBullets">15X</p>
+
+    <!-- ************************************ hearts***************************************** -->
+  
+
+       <img src="images/heart.png" alt="" id="heart1" class="heart">
+       <img src="images/heart.png" alt="" id="heart2" class="heart">
+       <img src="images/heart.png" alt="" id="heart3" class="heart">
+
+       <!-- ******************************photo of Egales***************************************** -->
+
+       <img src="images/Eagles/falconLogo.png" id="EagleLogo" alt="">
+       <p id="NumberOfKills">0X</p>
+       <img src="images/TigerLogo.png" id="TigerLogo" alt="">
+       <p id="NumberOfTigerKills">0X</p>
+
+       
+
+   <!-- ************************************** Game Over  ********************************************************     -->
+      <div id="gameOver"></div>
+
+
+
+
+
+      <!-- Aiming -->
+    <!-- <div id="aim" class="aiming">
+        <span class="mid-circle"></span>
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+        <span class="line4"></span>
+    </div> -->
+
+
+
+
+<!-- <h1 style="margin:200px 100px 100px 500px; color: red; display: none;" id="h1" >Game Over</h1>	 -->
+
+
+<!-- 
+<script>
+var TigerTimer;
+
+function AnimateTiger()
+{
+  	document.getElementById("TIGER").style.left = "440px";
+  	TigerTimer = setInterval("MoveTiger()", 20);
+}
+function MoveTiger()
+{
+	document.getElementById("TIGER").style.left= (parseInt(document.getElementById("TIGER").style.left)-2)+"px";
+	if (parseInt(document.getElementById("TIGER").style.left) < 0)
+	 {
+		clearInterval(TigerTimer);
+		document.getElementById('h1').style.display="inline-block" ;
+
+	}
+}
+</script>  -->
+
+
+
+
+
+
+
+
+    <script src="javascript/main.js"></script>
+</body>
+</html>

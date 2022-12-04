@@ -1,0 +1,283 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    cursor:none;
+    background-image: url(../images/background2.gif);
+    background-size: cover;
+    height:1000px ;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: rgb(14, 34, 0);
+    height: 100%;
+ 
+     
+    
+}
+/* ********************** Cursor **************************** */
+
+/* 
+.aiming {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    top: 40%;
+    z-index: 9999;
+}
+span {
+    display: inline-block;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+}
+.aiming .line1 {
+    top: 53%;
+    margin-top: -1.5px;
+    left: -37%;
+}
+.aiming .line2 {
+    top: 53%;
+    margin-top: -1.5px;
+    right: -37%;
+}
+.aiming .line3 {
+    transform: rotate(90deg);
+    right: 58%;
+    margin-right: -20px;
+    bottom: -5%;
+}
+.aiming .line4 {
+    transform: rotate(90deg);
+    right: 60%;
+    margin-right: -20px;
+    top: -5%;
+}
+.mid-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: transparent;
+    top: 25%;
+    left: 23%;
+    transform: translate(x,y);
+} */
+
+
+
+/* *************************************************************** */
+#rabbit1{
+    position: absolute;
+    margin-top:400px ;
+    margin-left: 360px;
+     
+    width: 150px;
+}
+#rabbit2{
+    position: absolute;
+    margin: 220px 700px 300px 710px;
+    width: 100px;
+}
+#rabbit3{
+    position: absolute;
+    margin: 400px 100px 350px 900px ;
+    width: 150px;
+}
+
+#Eagle1{
+    position: absolute;
+    margin-top: 56px;
+    margin-left: 78%;
+    width: 300px;
+}
+#Eagle2{
+    position: absolute;
+    width: 20px;
+    margin: 0px 0px 0px 900px;
+
+}
+#falcon2{
+    position: absolute;
+    width: 130px;
+    margin: -142px 0px 0px 560px;
+    transform: rotate(45deg); 
+}
+#TIGER{
+    margin-top: 30%;
+    position:absolute; 
+    left:1200px;
+    width: 180px;
+}
+.tigerDissapear{
+    opacity: 0;
+    transition: 0.9s;
+}
+#target-shooting {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+#bloodEffect{
+    /* background-image: url(/images/bloodEffect.png); */
+    width: 10px;
+    height: 8px;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(28px ,28px);
+    opacity: 0%;
+}
+#muteOn{
+    width: 30px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+#muteOff{
+    width: 30px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    display: none;
+}
+/* #muteOn:hover , #muteOff:hover{
+    cursor: pointer;
+
+} */
+
+
+/* ************************  timer ******************************* */
+#timer{
+    width: 30%;
+    height: 60px;
+    position: absolute;
+    bottom: 1%;
+    left: 35%;
+    text-align: center;
+    /* padding-top:20px; */
+}
+#timer p{
+    margin-top: 12px;
+    color: rgb(248, 232, 187); ;
+    
+}
+#remainingTime{
+
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+#time{
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(255, 255, 89);
+    font-family: sans-serif;
+}
+#progress1{
+    position: absolute;
+    width: 30%;
+    height: 120px;
+    top: 540px;
+    left: 35%;
+    color: brown;
+}
+.progress1::-webkit-meter-optimum-value {
+    background: red;
+  }
+
+
+/* *****************************   Bullet     ******************* */
+
+#Bullet1{
+    position: absolute;
+    width: 70px;
+    bottom: 1%;
+    left: 10px;
+}
+#Bullet2{
+    position: absolute;
+    width: 70px;
+    bottom: 1%;
+    left: 40px;
+}
+#Bullet3{
+    position: absolute;
+    width: 70px;
+    bottom: 1%;
+    left: 70px;
+}
+#Bullet4{
+    position: absolute;
+    width: 70px;
+    bottom: 1%;
+    left: 100px;
+}
+#Bullet5{
+    position: absolute;
+    width: 70px;
+    bottom: 1%;
+    left: 130px;
+}
+#NumberOfBullets{
+    position: absolute;
+    font-size: 34px;
+    font-weight: bolder;
+    bottom: 3%;
+    left: 190px;
+    color: white; 
+}
+/* **************************heart*************************** */
+
+#heart1{
+    position: absolute;
+    width: 40px;
+    bottom: 3%;
+    left: 280px;
+}
+#heart2{
+    position: absolute;
+    width: 40px;
+    bottom: 3%;
+    left: 330px;
+}
+#heart3{
+    position: absolute;
+    width: 40px;
+    bottom: 3%;
+    left: 380px;
+}
+/* ************************** EagleLogo*********************************** */
+
+#EagleLogo{
+    position: absolute;
+    width: 120px;
+    bottom: 1%;
+    left: 980px;
+}
+#NumberOfKills
+{
+    position: absolute;
+    font-size: 34px;
+    font-weight: bolder;
+    bottom: 3%;
+    left: 950px;
+    color: white;
+}
+#TigerLogo{
+    position: absolute;
+    width: 70px;
+    bottom: 1%;
+    left: 1200px;
+}
+#NumberOfTigerKills{
+    position: absolute;
+    font-size: 34px;
+    font-weight: bolder;
+    bottom: 3%;
+    left: 1150px;
+    color: white;
+}
